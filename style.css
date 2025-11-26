@@ -1,0 +1,276 @@
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #e7f1ff, #ffffff);
+    background-attachment: fixed;
+    color: #222;
+}
+
+/* ===========================
+   HEADER & NAVIGATION
+=========================== */
+header {
+    background: #1f2d3a;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin-left: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: #3a4b5a;
+    border-radius: 6px;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+    height: 75vh;
+    background: url('images/hero.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* ===========================
+   SECTIONS & CONTAINERS
+=========================== */
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===========================
+   ABOUT PAGE STYLES
+=========================== */
+.about-section {
+    padding: 40px 20px;
+    background: white;
+    text-align: left;
+}
+
+.about-section h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* ===========================
+   CHALLENGES SECTION
+=========================== */
+.challenges {
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #f9f9f9; /* light gray background */
+}
+
+.challenges h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.challenges ul {
+    list-style: none; /* removes bullets */
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+.challenges ul li {
+    background: #ffffff; /* white box for each challenge */
+    border-left: 4px solid #1f2d3a; /* colored bar instead of bullet */
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+
+
+/* ===========================
+   GALLERY GRID
+=========================== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ===========================
+   IMAGE SIZES
+=========================== */
+.image4,
+.image5 {
+    height: 200px;
+    width: 50px; 
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background: #1f2d3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN TWEAKS
+=========================== */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .challenges {
+        padding: 20px;
+    }
+
+    .challenges ul {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .challenges ul {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .challenges {
+        padding: 20px;
+    }
+
+     .challenges h2 {
+        font-size: 20px;
+    }
+
+    .challenges ul li {
+        padding: 10px 12px;
+    }
+}
+@media (max-width: 480px) {
+    .challenges h2 {
+        font-size: 18px;
+    }
+
+    .challenges ul li {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+
